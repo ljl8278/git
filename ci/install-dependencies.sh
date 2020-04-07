@@ -76,6 +76,10 @@ linux-gcc-4.8|GETTEXT_POISON)
 	sudo apt-get -q update
 	sudo apt-get -q -y install $UBUNTU_COMMON_PKGS
 	;;
+GETTEXT_POISON)
+	sudo apt-get -q update
+	sudo apt-get -q -y install $UBUNTU_COMMON_PKGS
+	;;
 esac
 
 if type p4d >/dev/null && type p4 >/dev/null
